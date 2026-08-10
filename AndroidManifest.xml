@@ -11,6 +11,12 @@
         android:allowBackup="true"
         android:supportsRtl="true">
 
+        <!-- Добавляем провайдер-заглушку для системы -->
+        <provider
+            android:name=".FmProvider"
+            android:authorities="com.android.fmradio.FmProvider"
+            android:exported="true" />
+
         <activity
             android:name=".FmMainActivity"
             android:exported="true">
